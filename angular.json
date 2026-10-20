@@ -54,6 +54,11 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": [
+              ".code.hackeuse.fr"
+            ]
+          },
           "configurations": {
             "production": {
               "buildTarget": "frontend-dockerfile2:build:production"
